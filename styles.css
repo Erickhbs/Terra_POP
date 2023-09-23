@@ -1,0 +1,74 @@
+
+
+body {
+    /*
+    fundo do site
+    */
+    background: url(/img/espaco.png);
+    /*posicionamento*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    /*usando -webkit-tranform para centralizar*/
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#pop {
+    font-size: 15px;
+    color: #f0f0f0;
+    padding: 10px;
+
+    /* Alinha o texto à direita dentro da div "pop" */
+}
+
+#info{
+    color: #f0f0f0;
+    padding: 10px;
+}
+
+#terra {
+    /* Centraliza o conteúdo à direita horizontalmente */
+    text-align: center;
+
+    /* Centraliza verticalmente o conteúdo */
+    line-height: 280px;
+
+    /*largura e altura da div #terra*/
+    width: 290px;
+    height: 280px;
+
+    /*imagem da terra*/
+    background: url(/img/mapa-mundi.png);
+
+    /*tornando a div em uma esfera*/
+    border-radius: 50%;
+
+    /*definindo o tamanho do mapa-mundi.png*/
+    background-size: 630px;
+
+    /*simulando a áreas de noite do planeta*/
+    box-shadow: 2px 12px 21px 12px rgb(0, 0, 0),
+
+    /*definindo as propriedades da animação*/
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    animation-name: rotacao;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotacao{
+    /*definindo as animacoes:
+        do ponto inicial '0px 0px', ate dar a volta completa
+        e voltar ao ponto inicial da imagem
+    */
+    from{
+        background-position: 0px 0px;
+    }
+    to{
+        background-position: 610px 0px;
+    }
+}
+
