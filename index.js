@@ -16,7 +16,8 @@ async function fetchData() {
         const divPop = document.getElementById('pop');
 
         // Atualiza o conteúdo da div com os dados recebidos
-        divPop.textContent = result;
+        const resultDict = JSON.parse(result)
+        divPop.textContent = resultDict.readable_format;
     } catch (error) {
         console.error(error);
     }
