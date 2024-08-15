@@ -15,16 +15,21 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.info-board{
+    background-color: gray;
+    color: black;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+}
+
 #pop {
     font-size: 15px;
-    color: #f0f0f0;
     padding: 10px;
 
     /* Alinha o texto à direita dentro da div "pop" */
 }
 
 #info{
-    color: #f0f0f0;
     padding: 10px;
 }
 
@@ -49,7 +54,7 @@ body {
     background-size: 630px;
 
     /*simulando a áreas de noite do planeta*/
-    box-shadow: 2px 12px 21px 12px rgb(0, 0, 0),
+    box-shadow: inset -10px 2px 21px 12px rgb(0, 0, 0),
 
     /*definindo as propriedades da animação*/
     inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
